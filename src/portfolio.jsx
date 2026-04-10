@@ -371,7 +371,7 @@ An AI-integrated native Android application for patient care management. Develop
             <div className="space-y-4">
               <h4 className="text-white font-bold tracking-widest uppercase border-b border-gray-800 pb-2">Front-End</h4>
               <ul className="space-y-2 text-gray-400 font-mono text-sm">
-                {['React.js', 'JavaScript (ES6+)', 'Tailwind CSS', 'HTML5 & CSS3', 'Angular', 'Bootstrap'].map(skill => (
+                {['React.js', 'Next.js', 'Typescript', 'JavaScript (ES6+)', 'Tailwind CSS', 'HTML5 & CSS3'].map(skill => (
                   <motion.li key={skill} whileHover={{ x: 5, color: "#22d3ee" }} className="cursor-default transition-colors">▹ {skill}</motion.li>
                 ))}
               </ul>
@@ -379,7 +379,7 @@ An AI-integrated native Android application for patient care management. Develop
             <div className="space-y-4">
               <h4 className="text-white font-bold tracking-widest uppercase border-b border-gray-800 pb-2">Back-End</h4>
               <ul className="space-y-2 text-gray-400 font-mono text-sm">
-                {['Supabase', 'Firebase', 'PHP', 'MySQL', 'Java'].map(skill => (
+                {['Node.js', 'Supabase', 'Firebase', 'PHP', 'MySQL'].map(skill => (
                   <motion.li key={skill} whileHover={{ x: 5, color: "#22d3ee" }} className="cursor-default transition-colors">▹ {skill}</motion.li>
                 ))}
               </ul>
@@ -387,7 +387,7 @@ An AI-integrated native Android application for patient care management. Develop
             <div className="space-y-4">
               <h4 className="text-white font-bold tracking-widest uppercase border-b border-gray-800 pb-2">Architecture</h4>
               <ul className="space-y-2 text-gray-400 font-mono text-sm">
-                {['Responsive Design', 'UI/UX Implementation', 'Web Accessibility', 'Software QA Testing'].map(skill => (
+                {['Responsive Design', 'UI/UX Implementation', 'RESTful APIs','State Management', 'Web Accessibility', 'Software QA Testing'].map(skill => (
                   <motion.li key={skill} whileHover={{ x: 5, color: "#22d3ee" }} className="cursor-default transition-colors">▹ {skill}</motion.li>
                 ))}
               </ul>
