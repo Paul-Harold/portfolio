@@ -238,6 +238,51 @@ export default function Portfolio() {
               </div>
             </TiltCard>
 
+            \\snypp
+            <TiltCard>
+              <div className="bg-[#0f1115]/80 backdrop-blur-sm border border-gray-800 p-8 rounded-xl flex flex-col h-full hover:border-cyan-400/50 transition-colors shadow-xl group relative z-10">
+                
+                <div className="flex justify-between items-center mb-6">
+                  <svg className="w-10 h-10 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                  
+                  <a 
+                    href="https://snypp.vercel.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110 z-20"
+                    aria-label="View Live Demo"
+                  >
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+                
+                <a 
+                  href="https://snypp.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block mb-3 w-max z-20"
+                >
+                  <h4 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                    Snypp
+                  </h4>
+                </a>
+                
+                <p className="text-gray-400 mb-6 flex-1 text-sm leading-relaxed">
+                  A modern note-taking and snippet management tool designed for productivity and collaboration. Features Kanban-style boards and agile workflows to organize notes, tasks, and ideas efficiently, with support for real-time sharing and editing.
+                </p>
+                
+                <div className="flex flex-wrap gap-3 font-mono text-xs text-cyan-400/70 pt-4 border-t border-gray-800">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind CSS</span>
+                </div>
+              </div>
+            </TiltCard>
+            
             <TiltCard>
               <div className="bg-[#0f1115]/80 backdrop-blur-sm border border-gray-800 p-8 rounded-xl flex flex-col h-full hover:border-cyan-400/50 transition-colors shadow-xl group relative z-10">
                 
@@ -281,6 +326,7 @@ An AI-integrated native Android application for patient care management. Develop
                 </div>
               </div>
             </TiltCard>
+
 
             <div className="border-2 border-dashed border-gray-800/50 rounded-xl p-8 flex flex-col items-center justify-center h-full min-h-[350px] opacity-60">
               <svg className="w-8 h-8 text-gray-600 mb-4 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
