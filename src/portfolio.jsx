@@ -238,7 +238,6 @@ export default function Portfolio() {
               </div>
             </TiltCard>
 
-            \\snypp
             <TiltCard>
               <div className="bg-[#0f1115]/80 backdrop-blur-sm border border-gray-800 p-8 rounded-xl flex flex-col h-full hover:border-cyan-400/50 transition-colors shadow-xl group relative z-10">
                 
@@ -282,7 +281,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </TiltCard>
-            
+
             <TiltCard>
               <div className="bg-[#0f1115]/80 backdrop-blur-sm border border-gray-800 p-8 rounded-xl flex flex-col h-full hover:border-cyan-400/50 transition-colors shadow-xl group relative z-10">
                 
