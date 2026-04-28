@@ -142,8 +142,8 @@ export default function Portfolio() {
             {/* WORKABLE RESUME DOWNLOAD BUTTON */}
             <motion.a 
               whileHover={{ scale: 1.05 }}
-              href="/Paul-Harold-Batiles_Resume.pdf" 
-              download="Paul-Harold-Batiles_Resume.pdf"
+              href="/Resume-Batiles_Paulharold (2).pdf" 
+              download="Resume-Batiles_Paulharold (2).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gray-800/50 border-2 border-transparent text-white font-bold uppercase tracking-widest rounded hover:bg-gray-800 transition-all duration-300 flex items-center gap-2"
@@ -193,6 +193,55 @@ export default function Portfolio() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
+
+            <TiltCard>
+              <div className="bg-[#0f1115]/80 backdrop-blur-sm border border-gray-800 p-8 rounded-xl flex flex-col h-full hover:border-cyan-400/50 transition-colors shadow-xl group relative z-10">
+                
+                <div className="flex justify-between items-center mb-6">
+                  <svg className="w-10 h-10 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                  
+                  <a 
+                    href="https://anivie.vercel.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110 z-20"
+                    aria-label="View Live Demo"
+                  >
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+                
+                <a 
+                  href="https://anivie.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block mb-3 w-max z-20"
+                >
+                  <h4 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                    Anivie
+                  </h4>
+                </a>
+                
+                <p className="text-gray-400 mb-6 flex-1 text-sm leading-relaxed">
+                  Anivie is a comprehensive anime/movie discovery and tracking platform designed for fans to explore, organize, and manage their personal watchlists. Built on the MERN stack, the application provides a centralized hub where users can search for titles, view detailed series information, and track their viewing progress in real-time. By leveraging MERN stack, Anivie delivers a fast, responsive interface that simplifies how enthusiasts stay connected with their favorite shows and upcoming releases.
+                </p>
+                
+                <div className="flex flex-wrap gap-3 font-mono text-xs text-cyan-400/70 pt-4 border-t border-gray-800">
+                  <span>MongoDB</span>
+                  <span>Express</span>
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>Tailwind</span>
+                  <span>API</span>
+                </div>
+              </div>
+            </TiltCard>
+
+
             <TiltCard>
               <div className="bg-[#0f1115]/80 backdrop-blur-sm border border-gray-800 p-8 rounded-xl flex flex-col h-full hover:border-cyan-400/50 transition-colors shadow-xl group relative z-10">
                 
@@ -221,12 +270,12 @@ export default function Portfolio() {
                   className="inline-block mb-3 w-max z-20"
                 >
                   <h4 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
-                    Midnight Hardware
+                    Midnight
                   </h4>
                 </a>
                 
                 <p className="text-gray-400 mb-6 flex-1 text-sm leading-relaxed">
-                  A high-performance e-commerce platform for PC components. Built with React 18, Vite, and Tailwind CSS. Features custom global state management, LocalStorage persistence, and dynamic Supabase integration for CRUD operations and secure authentication.
+                  An e-commerce platform for PC components. Built with React 18, Vite, and Tailwind CSS. Features custom global state management, LocalStorage persistence, and dynamic Supabase integration for CRUD operations and secure authentication.
                 </p>
                 
                 <div className="flex flex-wrap gap-3 font-mono text-xs text-cyan-400/70 pt-4 border-t border-gray-800">
@@ -234,6 +283,7 @@ export default function Portfolio() {
                   <span>Supabase</span>
                   <span>Tailwind</span>
                   <span>Vite</span>
+                  <span>Resend</span>
                 </div>
               </div>
             </TiltCard>
@@ -379,7 +429,7 @@ An AI-integrated native Android application for patient care management. Develop
             <div className="space-y-4">
               <h4 className="text-white font-bold tracking-widest uppercase border-b border-gray-800 pb-2">Back-End</h4>
               <ul className="space-y-2 text-gray-400 font-mono text-sm">
-                {['Node.js', 'Supabase', 'Firebase', 'PHP', 'MySQL'].map(skill => (
+                {['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Supabase', 'Firebase', 'PHP', 'MySQL','JWT'].map(skill => (
                   <motion.li key={skill} whileHover={{ x: 5, color: "#22d3ee" }} className="cursor-default transition-colors">▹ {skill}</motion.li>
                 ))}
               </ul>
@@ -387,7 +437,7 @@ An AI-integrated native Android application for patient care management. Develop
             <div className="space-y-4">
               <h4 className="text-white font-bold tracking-widest uppercase border-b border-gray-800 pb-2">Architecture</h4>
               <ul className="space-y-2 text-gray-400 font-mono text-sm">
-                {['Responsive Design', 'UI/UX Implementation', 'RESTful APIs','State Management', 'Web Accessibility', 'Software QA Testing'].map(skill => (
+                {['Vercel', 'Postman','Responsive Design', 'UI/UX Implementation', 'RESTful APIs','State Management', 'Web Accessibility', 'Software QA Testing'].map(skill => (
                   <motion.li key={skill} whileHover={{ x: 5, color: "#22d3ee" }} className="cursor-default transition-colors">▹ {skill}</motion.li>
                 ))}
               </ul>
