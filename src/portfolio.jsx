@@ -125,10 +125,10 @@ export default function Portfolio() {
             Paul Harold Batiles.
           </motion.h1>
           <motion.h2 variants={itemReveal} className="text-4xl md:text-6xl font-bold text-gray-500 mb-8 tracking-tight">
-            I build high-performance web applications.
+            I build Quality Web Applications.
           </motion.h2>
           <motion.p variants={itemReveal} className="max-w-2xl text-gray-400 text-lg leading-relaxed mb-10">
-            I'm a Front-End Developer and Information Technology graduate. I focus on building responsive, accessible, and highly interactive user interfaces, ensuring peak system performance from the UI down to the database.
+            I'm a Full-Stack Developer and Information Technology graduate. I focus on building responsive, accessible, and highly interactive user interfaces, ensuring peak system performance from the UI down to the database.
           </motion.p>
           <motion.div variants={itemReveal} className="flex flex-wrap gap-4">
             <motion.button 
@@ -165,10 +165,10 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-3 gap-12 items-center">
             <div className="md:col-span-2 space-y-4 text-gray-400 leading-relaxed text-lg">
               <p>
-                As an Information Technology graduate, I possess a robust understanding of the complete software development life cycle, including rigorous testing and troubleshooting protocols. 
+                As an Information Technology graduate, I possess solid understanding of the complete software development life cycle, including rigorous testing and troubleshooting protocols. 
               </p>
               <p>
-                My focus is front-end architecture, utilizing React.js, HTML5, CSS3, and modern utility frameworks like Tailwind CSS to build responsive, accessible, and highly interactive user interfaces. I am self-motivated, adaptable, and eager to contribute my technical skills and problem-solving abilities to a dynamic team.
+                I’m still learning and picking up new things as I go, but I’ve already worked on a few different projects, including a MERN stack anime tracker , a PC hardware store using Supabase , and a note-taking tool built with Next.js. I also have experience with mobile development using React Native and Firebase. I just focus on writing clean, organized code so that my projects actually work and stay easy to manage.
               </p>
             </div>
             
