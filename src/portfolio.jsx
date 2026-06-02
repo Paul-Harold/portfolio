@@ -158,7 +158,7 @@ export default function Portfolio() {
             Paul Harold Batiles.
           </motion.h1>
           <motion.h2 variants={itemReveal} className="text-4xl md:text-6xl font-bold text-gray-500 mb-8 tracking-tight">
-            I build Quality Web Applications.
+            Full Stack Developer
           </motion.h2>
           <motion.p variants={itemReveal} className="max-w-2xl text-gray-400 text-lg leading-relaxed mb-10">
             I'm a Full-Stack Developer (MERN) and Information Technology graduate. I focus on building responsive, accessible, and highly interactive user interfaces, ensuring peak system performance from the UI down to the database.
