@@ -174,8 +174,8 @@ export default function Portfolio() {
             
             <motion.a 
               whileHover={{ scale: 1.05 }}
-              href="/Resume-Batiles_Paulharold (2).pdf" 
-              download="Resume-Batiles_Paulharold (2).pdf"
+              href="/Resume-Batiles_Paulharold (3).pdf" 
+              download="Resume-Batiles_Paulharold (3).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gray-800/50 border-2 border-transparent text-white font-bold uppercase tracking-widest rounded hover:bg-gray-800 transition-all duration-300 flex items-center gap-2"
