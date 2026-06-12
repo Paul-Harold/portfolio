@@ -5,3 +5,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: #FAF8F5;
+  color: #18181B;
+}
+
+::selection {
+  background-color: rgba(201, 37, 43, 0.15);
+  color: #A41C21;
+}
