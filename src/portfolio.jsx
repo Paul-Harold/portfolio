@@ -70,24 +70,32 @@ const MARQUEE_TECH = ['React.js', 'Next.js', 'TypeScript', 'Node.js', 'Express.j
 
 const PROJECTS = [
   {
+    title: 'InnFind',
+    description: 'A full-stack hotel reservation platform for browsing and booking hotels across the Philippines. Search by destination, filter by price and amenities, book rooms with live availability checks and date-overlap validation, manage stays from a personal dashboard, and leave reviews gated to completed stays. Includes a full admin panel — all backed by a REST API with JWT authentication.',
+    tech: ['React 19', 'React Router v7', 'Express', 'MongoDB', 'JWT'],
+    live: 'https://innfind.vercel.app/',
+    repo: 'https://github.com/Paul-Harold/InnFind',
+  },
+  {
     title: 'Anivie',
-    description: 'An anime and movie discovery and tracking platform — a centralized hub to search titles, view detailed series information, and track viewing progress in real time. Built on the MERN stack for a fast, responsive experience.',
-    tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind'],
+    description: 'A full-stack anime and movie watchlist app. Discover content from the Jikan and TMDB APIs, then track watch status, ratings, and diary notes per title. Built on the MERN stack with JWT auth and email verification (Nodemailer), and a global Axios interceptor that scopes auth headers to the backend only.',
+    tech: ['React 19', 'Express', 'MongoDB', 'JWT', 'Jikan / TMDB API'],
     live: 'https://anivie.vercel.app/',
     repo: 'https://github.com/Paul-Harold/Anivie',
   },
   {
     title: 'Midnight',
-    description: 'An e-commerce platform for PC components built with React 18, Vite, and Tailwind CSS. Features custom global state management, LocalStorage persistence, and Supabase integration for CRUD operations and secure authentication.',
-    tech: ['React 18', 'Supabase', 'Tailwind', 'Vite', 'Resend'],
+    description: 'An e-commerce platform for PC components with a full admin dashboard — product CRUD with image uploads, order status flow, vouchers, bundles, category discounts, and a newsletter broadcast via a Supabase Edge Function. Role-based routing separates admin and customer, with cart and favorites persisted to localStorage.',
+    tech: ['React 19', 'Vite', 'Supabase', 'Tailwind', 'Edge Functions'],
     live: 'https://ecommerce-chi-liard-73.vercel.app/',
     repo: 'https://github.com/Paul-Harold/ecommerce',
   },
   {
     title: 'Snypp',
-    description: 'A modern note-taking and snippet management tool designed for productivity and collaboration. Features Kanban-style boards and agile workflows to organize notes, tasks, and ideas, with real-time sharing and editing.',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    description: 'A real-time collaborative workspace with kanban boards and snippet grids. Edits sync live across users via Supabase Postgres-changes channels with a polling fallback, and role-based access control (owner / member / viewer) gates editing. Built on the Next.js App Router with no API routes — direct Supabase client calls throughout.',
+    tech: ['Next.js 16', 'React 19', 'TypeScript', 'Supabase', 'Tailwind v4'],
     live: 'https://snypp.vercel.app/',
+    repo: 'https://github.com/Paul-Harold/Snypp',
   },
   {
     title: 'ElderCare',
@@ -264,8 +272,8 @@ export default function Portfolio() {
                   View My Work
                 </button>
                 <a
-                  href="/Resume-Batiles_Paulharold (3).pdf"
-                  download="Resume-Batiles_Paulharold.pdf"
+                  href="/Resume-Batiles_Paul_harold.pdf"
+                  download="Resume-Batiles_Paul_harold.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-7 py-3.5 border border-ink/20 text-ink font-semibold text-sm rounded-full hover:border-ink hover:bg-ink/[0.03] transition-all duration-300 flex items-center gap-2"
@@ -350,7 +358,7 @@ export default function Portfolio() {
         <section id="projects" className="scroll-mt-32">
           <SectionHeading number="02" title="Projects" />
 
-          {/* Featured: InnFind — dark bento card to echo the portrait */}
+          {/* Featured: BugTrack — dark bento card to echo the portrait */}
           <Reveal className="mb-8">
             <div className="relative bg-[#0B0B0D] rounded-3xl p-8 md:p-12 overflow-hidden shadow-2xl shadow-ink/20">
               <div className="absolute top-0 right-0 w-72 h-72 bg-accent/15 rounded-full blur-[100px] pointer-events-none" />
@@ -358,27 +366,28 @@ export default function Portfolio() {
                 <div className="flex items-center justify-between mb-6">
                   <span className="text-accent text-xs font-semibold uppercase tracking-[0.25em]">Featured Project</span>
                   <div className="flex gap-4">
-                    <a href="https://github.com/Paul-Harold/InnFind" target="_blank" rel="noopener noreferrer" aria-label="InnFind GitHub repository" className="text-white/40 hover:text-white transition-colors">
+                    <a href="https://github.com/Paul-Harold/BugTrack" target="_blank" rel="noopener noreferrer" aria-label="BugTrack GitHub repository" className="text-white/40 hover:text-white transition-colors">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" /></svg>
                     </a>
-                    <a href="https://innfind.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="InnFind live site" className="text-white/40 hover:text-white transition-colors">
+                    <a href="https://bug-track-ten.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="BugTrack live site" className="text-white/40 hover:text-white transition-colors">
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                     </a>
                   </div>
                 </div>
-                <a href="https://innfind.vercel.app" target="_blank" rel="noopener noreferrer">
-                  <h4 className="font-serif text-3xl md:text-5xl text-white mb-5 hover:text-accent transition-colors w-max max-w-full">InnFind</h4>
+                <a href="https://bug-track-ten.vercel.app" target="_blank" rel="noopener noreferrer">
+                  <h4 className="font-serif text-3xl md:text-5xl text-white mb-5 hover:text-accent transition-colors w-max max-w-full">BugTrack</h4>
                 </a>
                 <p className="text-white/60 leading-relaxed max-w-3xl mb-8">
-                  A full-stack hotel reservation platform for browsing and booking hotels across the
-                  Philippines. Search by destination and filter by price, amenities, and rating; book
-                  rooms with live availability checks, date-overlap validation, and server-side pricing;
-                  manage upcoming and past stays from a personal dashboard; and leave star-rated reviews
-                  gated to completed stays. Includes a full admin panel with stats, hotel and room CRUD,
-                  and booking status management — all backed by a REST API with JWT authentication.
+                  A QA management system blending Jira and TestRail concepts. Organize test suites and
+                  cases, execute test runs with pass/fail tracking, and manage bug reports through
+                  role-based status workflows for QA, developers, and managers. A single-endpoint
+                  dashboard surfaces execution breakdowns, open bugs by severity, a 30-day bug trend, and
+                  a weighted release-readiness score built from parallel MongoDB aggregation pipelines.
+                  Backed by a dual-mode Express API (local server and Vercel serverless) with JWT auth and
+                  per-project human-readable IDs like SHOP-BUG3.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {['React 19', 'React Router v7', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Vercel + Render'].map((t) => (
+                  {['React 19', 'Express 5', 'MongoDB', 'Mongoose', 'JWT', 'Recharts', 'Vercel Serverless'].map((t) => (
                     <span key={t} className="text-xs font-medium text-white/60 bg-white/[0.06] border border-white/10 rounded-full px-3 py-1">{t}</span>
                   ))}
                 </div>
